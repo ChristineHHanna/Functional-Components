@@ -92,7 +92,20 @@ const movies = {
   },
 };
 
-class App extends Component {
+
+function App (props) {
+  return (
+    <div>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">ReactND - Coding Practice</h1>
+        </header>
+        <h1>How Popular is Your Favorite Movie?</h1>
+        <MovieCardsList profiles={profiles} movies={movies} users={users} />
+      </div>
+    )
+}
+/*class App extends Component {
   render() {
     return (
       <div>
@@ -105,6 +118,6 @@ class App extends Component {
       </div>
     );
   }
-}
+}*/
 
 export default App;
